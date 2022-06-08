@@ -380,4 +380,56 @@ img {
   line-height: 140%;
   color: #ffffff;
 }
+
+.strengths {
+  padding: 0 320px 242px;
+}
+
+.strengths .images-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 120px;
+}
+
+.strengths .images-wrapper .main-image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.strengths .images-wrapper .main-image-wrapper .frame {
+  z-index: 1;
+}
+
+.strengths .images-wrapper .main-image-wrapper .main-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.strengths .images-wrapper .main-image-wrapper::before {
+  content: url(.././img/img2.png);
+  display: block;
+  position: absolute;
+  left: -320px;
+  bottom: 90px;
+}
+
+.strengths .images-wrapper .main-image-wrapper::after {
+  content: url(.././img/img3.png);
+  display: block;
+  position: absolute;
+  right: -320px;
+  bottom: 90px;
+}
 /*# sourceMappingURL=main.css.map */

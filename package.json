@@ -1,13 +1,13 @@
 {
-  "name": "sales-car",
+  "name": "logotype",
   "version": "1.0.0",
-  "description": "test-cars",
+  "description": "Logotype",
   "main": "index.js",
-  "homepage": "https://RomaKokontsev.github.io/sales-car",
+  "homepage": "https://RomaKokontsev.github.io/Logotype",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url /sales-car/",
+    "predeploy": "npm run build -- --public-url /Logotype/",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],

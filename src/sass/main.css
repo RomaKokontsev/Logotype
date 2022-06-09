@@ -435,6 +435,7 @@ img {
 }
 
 .strengths .strength-wrapper .strength {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,6 +443,31 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 120px;
+}
+
+.strengths .strength-wrapper .strength .green {
+  position: absolute;
+  top: 0;
+  left: -400px;
+  width: 200px;
+  height: 200px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, rgba(31, 170, 119, 0.762342)), color-stop(78%, rgba(31, 170, 119, 0.823967)));
+  background-image: linear-gradient(90deg, #020024 0%, rgba(31, 170, 119, 0.762342) 0%, rgba(31, 170, 119, 0.823967) 78%);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+}
+
+.strengths .strength-wrapper .strength .blue-process {
+  position: absolute;
+  top: -50px;
+  border-radius: 50%;
+  left: -400px;
+  width: 300px;
+  height: 350px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, rgba(31, 71, 170, 0.762342)), color-stop(49%, rgba(68, 84, 203, 0.947216)));
+  background-image: linear-gradient(90deg, #020024 0%, rgba(31, 71, 170, 0.762342) 0%, rgba(68, 84, 203, 0.947216) 49%);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
 }
 
 .strengths .strength-wrapper .strength .strength-name {
@@ -561,6 +587,7 @@ img {
 }
 
 .strengths .strength-wrapper .adaptive {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,6 +598,18 @@ img {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 0;
+}
+
+.strengths .strength-wrapper .adaptive .glare {
+  position: absolute;
+  z-index: 1;
+  right: -250px;
+}
+
+.strengths .strength-wrapper .adaptive .glare .blue {
+  position: absolute;
+  top: 200px;
+  right: -600px;
 }
 
 .strengths .strength-wrapper .adaptive .adaptive-description {
@@ -610,6 +649,7 @@ img {
 }
 
 .strengths .strength-wrapper .adaptive .adaptive-img {
+  z-index: 2;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;

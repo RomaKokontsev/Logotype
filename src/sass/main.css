@@ -1,6 +1,6 @@
 @font-face {
   font-family: Firs;
-  src: url(./TTFirsNeue-Medium.ttf);
+  src: url(./TTFirsNeue-Regular.ttf);
 }
 
 html {
@@ -383,6 +383,7 @@ img {
 
 .strengths {
   padding: 0 320px 242px;
+  margin: 0;
 }
 
 .strengths .images-wrapper {
@@ -431,5 +432,337 @@ img {
   position: absolute;
   right: -320px;
   bottom: 90px;
+}
+
+.strengths .strength-wrapper .strength {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.strengths .strength-wrapper .strength .strength-name {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.3;
+}
+
+.strengths .strength-wrapper .strength .characteristic-list {
+  -ms-flex-preferred-size: 747px;
+      flex-basis: 747px;
+}
+
+.strengths .strength-wrapper .strength .characteristic-list .characteristic-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.strengths .strength-wrapper .strength .characteristic-list .characteristic-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.strengths .strength-wrapper .strength .characteristic-list .characteristic-item::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: #ffffff;
+}
+
+.strengths .strength-wrapper .strength .characteristic-list .no-dots::before {
+  content: '';
+  display: none;
+}
+
+.strengths .strength-wrapper .characteristic-wrapper {
+  -ms-flex-preferred-size: 747px;
+      flex-basis: 747px;
+}
+
+.strengths .strength-wrapper .characteristic-wrapper h3 {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.strengths .strength-wrapper .characteristic-wrapper .characteristic-list {
+  padding-left: 20px;
+}
+
+.strengths .strength-wrapper .characteristic-wrapper .characteristic-list:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.strengths .strength-wrapper .characteristic-wrapper .characteristic-list .characteristic-item {
+  display: block;
+}
+
+.strengths .strength-wrapper .characteristic-wrapper .characteristic-list .characteristic-item::before {
+  position: absolute;
+  left: -15px;
+  top: 13px;
+}
+
+.strengths .strength-wrapper .characteristic-wrapper .characteristic-list .characteristic-item span {
+  font-weight: 600;
+}
+
+.strengths .strength-wrapper .deliverables {
+  display: block;
+  padding: 50px 60px 57px;
+  background-image: linear-gradient(110.74deg, rgba(255, 255, 255, 0.15) 0%, rgba(205, 192, 255, 0.04) 100%);
+  -webkit-backdrop-filter: blur(42px);
+          backdrop-filter: blur(42px);
+  border-radius: 20px;
+}
+
+.strengths .strength-wrapper .deliverables .strength-name {
+  margin-bottom: 20px;
+}
+
+.strengths .strength-wrapper .deliverables .characteristic-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.strengths .strength-wrapper .deliverables .characteristic-wrapper div {
+  -ms-flex-preferred-size: 540px;
+      flex-basis: 540px;
+}
+
+.strengths .strength-wrapper .deliverables .characteristic-wrapper div:not(:last-child) {
+  margin-right: 80px;
+}
+
+.strengths .strength-wrapper .deliverables .characteristic-wrapper div h3 > span {
+  font-weight: 400;
+}
+
+.strengths .strength-wrapper .strengths-img {
+  max-width: none;
+  margin-bottom: 120px;
+}
+
+.strengths .strength-wrapper .the-insights {
+  margin-bottom: 180px;
+}
+
+.strengths .strength-wrapper .adaptive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+}
+
+.strengths .strength-wrapper .adaptive .adaptive-description {
+  -ms-flex-preferred-size: 564px;
+      flex-basis: 564px;
+  margin-right: 183px;
+}
+
+.strengths .strength-wrapper .adaptive .adaptive-description p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  margin-bottom: 44px;
+}
+
+.strengths .strength-wrapper .adaptive .adaptive-description .img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.strengths .strength-wrapper .adaptive .adaptive-description .img-wrapper img {
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
+}
+
+.strengths .strength-wrapper .adaptive .adaptive-description .img-wrapper img:not(:last-child) {
+  margin-right: 54px;
+}
+
+.strengths .strength-wrapper .adaptive .adaptive-description .img-wrapper img:hover, .strengths .strength-wrapper .adaptive .adaptive-description .img-wrapper img:focus {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.strengths .strength-wrapper .adaptive .adaptive-img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.strengths .strength-wrapper .adaptive .adaptive-img div {
+  position: absolute;
+  right: -560px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 60px;
+}
+
+.strengths .strength-wrapper .adaptive .adaptive-img div img:not(:last-child) {
+  margin-right: 60px;
+}
+
+.next-project {
+  padding: 0 320px 106px;
+  margin: 0;
+}
+
+.next-project .project-wrapper {
+  margin: 0 auto 180px;
+  text-align: center;
+}
+
+.next-project .project-wrapper .project-info {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  background-image: linear-gradient(90.08deg, #215aee 0.06%, #00aad6 102.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+
+.next-project .project-wrapper .project-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 40px;
+}
+
+.next-project .information-wrapper p {
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 130%;
+}
+
+.next-project .information-wrapper p a {
+  position: relative;
+  background-image: linear-gradient(90.08deg, #215aee 0.06%, #00aad6 102.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.next-project .information-wrapper p a::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(90.08deg, #215aee 0.06%, #00aad6 102.4%);
+}
+
+.footer {
+  padding: 0 320px 40px;
+  margin: 0;
+}
+
+.footer span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #cacaca;
+}
+
+.footer .contacts-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 63px;
+}
+
+.footer .contacts-wrapper .social-contacts .email-link {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 34px;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.footer .contacts-wrapper .social-contacts .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .contacts-wrapper .social-contacts .social-links .social-link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
+}
+
+.footer .contacts-wrapper .social-contacts .social-links .social-link a:hover, .footer .contacts-wrapper .social-contacts .social-links .social-link a:focus {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.footer .contacts-wrapper .social-contacts .social-links .social-link:not(:last-child) {
+  margin-right: 16px;
+}
+
+.footer .contacts-wrapper .social-contacts .social-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 26px;
+}
+
+.footer .contacts-wrapper .social-contacts .social-contact {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #cacaca;
 }
 /*# sourceMappingURL=main.css.map */

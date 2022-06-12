@@ -428,11 +428,13 @@ img {
   font-size: 20px;
   line-height: 52px;
   margin-bottom: 15px;
+  text-align: center;
 }
 @media screen and (min-width: 960px) {
   .hero .project .website-name {
     font-size: 28px;
     margin-bottom: 30px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -496,7 +498,7 @@ img {
   width: 50px;
   height: 48px;
   right: 0;
-  bottom: 100px;
+  bottom: 110px;
   transition-duration: 800ms;
 }
 @media screen and (min-width: 960px) {
@@ -700,7 +702,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 250px;
+  width: 290px;
 }
 @media screen and (min-width: 960px) {
   .strengths .images-wrapper .main-image-wrapper .main-image {

@@ -39,29 +39,18 @@ img {
   margin-right: auto;
   box-sizing: border-box;
 
-  /* outline: 2px solid tomato; */
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: 360px) {
+    width: 360px;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: 960px) {
+    width: 960px;
+  }
+  @media screen and (min-width: 1366px) {
+    width: 1366px;
   }
 
   @media screen and (min-width: 1920px) {
     width: 1920px;
   }
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-.hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }

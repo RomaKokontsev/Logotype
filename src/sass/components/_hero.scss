@@ -1,6 +1,18 @@
 .hero {
-  padding: 0 320px 124px;
-  margin: 0;
+  padding: 0 20px 10px;
+
+  position: relative;
+
+  @media screen and (min-width: 960px) {
+    padding: 0 80px 50px;
+  }
+  @media screen and (min-width: 1366px) {
+    padding: 0 180px 100px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    padding: 0 320px 124px;
+  }
 
   .path {
     display: flex;
@@ -8,23 +20,37 @@
     .item {
       position: relative;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 8px;
       line-height: 120%;
       color: #969a9f;
 
+      @media screen and (min-width: 960px) {
+        font-size: 14px;
+      }
+
       &:not(:last-child) {
-        margin-right: 37px;
+        margin-right: 20px;
+
+        @media screen and (min-width: 960px) {
+          margin-right: 37px;
+        }
       }
 
       &-name::after {
         content: '';
         display: block;
         position: absolute;
-        top: 7px;
-        right: -25px;
-        width: 13px;
+        top: 5px;
+        right: -10px;
+        width: 5px;
         height: 2px;
         background-color: #969a9f;
+
+        @media screen and (min-width: 960px) {
+          top: 7px;
+          right: -25px;
+          width: 13px;
+        }
       }
 
       .current-location {
@@ -32,37 +58,89 @@
       }
     }
   }
+  .gradient1 {
+    display: none;
+    @media screen and (min-width: 1920px) {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: -150px;
+
+      .blue {
+        width: 200px;
+        height: 300px;
+        background-image: linear-gradient(
+          180deg,
+          #562d6a -6.63%,
+          #215aee 100.18%
+        );
+        filter: blur(80px);
+      }
+      .green {
+        position: absolute;
+        top: 100px;
+        width: 200px;
+        height: 300px;
+        background-color: #137a67;
+        filter: blur(80px);
+      }
+    }
+  }
   .project {
+    position: relative;
     .company-name {
       font-weight: 400;
-      font-size: 22px;
+      font-size: 16px;
       line-height: 120%;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+
+      @media screen and (min-width: 960px) {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
     }
     .website-name {
       font-weight: 500;
-      font-size: 40px;
+      font-size: 20px;
       line-height: 52px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
+
+      @media screen and (min-width: 960px) {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+      @media screen and (min-width: 1366px) {
+        font-size: 34px;
+      }
+      @media screen and (min-width: 1920px) {
+        font-size: 40px;
+      }
     }
 
     .btn {
       background-color: #080808;
       border: 2px solid #505050;
       border-radius: 30px;
-      width: 187px;
-      height: 60px;
+      width: 150px;
+      height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: Firs;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 100%;
       color: #ffffff;
       cursor: pointer;
       transition-duration: 800ms;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
+
+      @media screen and (min-width: 960px) {
+        width: 187px;
+        height: 60px;
+        font-size: 16px;
+        margin-bottom: 60px;
+      }
 
       &:hover,
       &:focus {
@@ -78,17 +156,41 @@
 
     .website-img-wrapper {
       position: relative;
-      margin-bottom: 80px;
+      margin-bottom: 40px;
+
+      @media screen and (min-width: 960px) {
+        margin-bottom: 80px;
+      }
 
       .button {
         background-color: inherit;
-        margin-left: 102px;
         border: none;
         cursor: pointer;
         position: absolute;
-        right: -260px;
-        bottom: 50px;
+        width: 50px;
+        height: 48px;
+        right: 0;
+        bottom: 100px;
         transition-duration: 800ms;
+
+        @media screen and (min-width: 960px) {
+          width: 100px;
+          height: 98px;
+          right: 0;
+          bottom: 270px;
+        }
+        @media screen and (min-width: 1366px) {
+          width: 138px;
+          height: 136px;
+          right: -180px;
+          bottom: 50px;
+        }
+        @media screen and (min-width: 1920px) {
+          width: 158px;
+          height: 156px;
+          right: -260px;
+          bottom: 50px;
+        }
 
         &:hover,
         &:focus {
@@ -97,11 +199,13 @@
       }
     }
     .project-description {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-column-gap: 70px;
-      grid-row-gap: 35px;
+      @media screen and (min-width: 960px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 70px;
+        grid-row-gap: 35px;
+      }
 
       .div1 {
         grid-area: 1 / 1 / 2 / 2;
@@ -124,16 +228,94 @@
 
       .item {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 10px;
         line-height: 120%;
         color: #777777;
+
+        @media screen and (min-width: 960px) {
+          font-size: 12px;
+        }
+        @media screen and (min-width: 1366px) {
+          font-size: 14px;
+        }
+        @media screen and (min-width: 1920px) {
+          font-size: 16px;
+        }
 
         div {
           margin-top: 10px;
           font-weight: 500;
-          font-size: 22px;
+          font-size: 14px;
           line-height: 140%;
           color: #ffffff;
+
+          @media screen and (min-width: 960px) {
+            font-size: 18px;
+          }
+          @media screen and (min-width: 1366px) {
+            font-size: 20px;
+          }
+          @media screen and (min-width: 1920px) {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    .gradient2 {
+      display: none;
+      @media screen and (min-width: 1920px) {
+        display: block;
+        position: absolute;
+        top: 300px;
+        left: -400px;
+
+        .blue {
+          width: 300px;
+          height: 400px;
+          background-image: linear-gradient(
+            180deg,
+            #562d6a -6.63%,
+            #215aee 100.18%
+          );
+          filter: blur(100px);
+        }
+        .green {
+          position: absolute;
+          top: 200px;
+          width: 300px;
+          height: 400px;
+          background-color: #137a67;
+          filter: blur(100px);
+        }
+      }
+    }
+    .gradient3 {
+      display: none;
+
+      @media screen and (min-width: 1920px) {
+        display: flex;
+        position: absolute;
+        bottom: -100px;
+        right: -420px;
+        .blue {
+          width: 350px;
+          height: 150px;
+          background-image: linear-gradient(
+            180deg,
+            #562d6a -6.63%,
+            #215aee 100.18%
+          );
+          filter: blur(60px);
+          transform: rotate(-50deg);
+        }
+        .green {
+          position: absolute;
+          bottom: -120px;
+          right: 250px;
+          width: 150px;
+          height: 150px;
+          background-color: #137a67;
+          filter: blur(35px);
         }
       }
     }

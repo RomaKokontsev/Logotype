@@ -1,10 +1,29 @@
 .next-project {
-  padding: 0 320px 106px;
-  margin: 0;
+  padding: 0 20px 10px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 960px) {
+    padding: 0 80px 50px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1366px) {
+    padding: 0 180px 100px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    padding: 0 320px 124px;
+  }
 
   .project-wrapper {
-    margin: 0 auto 180px;
+    margin: 0 auto 60px;
     text-align: center;
+
+    @media screen and (min-width: 960px) {
+      margin: 0 auto 100px;
+    }
+    @media screen and (min-width: 1366px) {
+      margin: 0 auto 180px;
+    }
 
     .project-info {
       font-weight: 500;
@@ -21,16 +40,30 @@
     }
     .project-title {
       font-weight: 500;
-      font-size: 40px;
+      font-size: 28px;
       line-height: 52px;
       margin-bottom: 40px;
+
+      @media screen and (min-width: 960px) {
+        font-size: 32px;
+      }
+      @media screen and (min-width: 1366px) {
+        font-size: 40px;
+      }
     }
   }
   .information-wrapper {
     p {
       font-weight: 600;
-      font-size: 46px;
+      font-size: 20px;
       line-height: 130%;
+
+      @media screen and (min-width: 960px) {
+        font-size: 35px;
+      }
+      @media screen and (min-width: 1366px) {
+        font-size: 46px;
+      }
 
       a {
         position: relative;
